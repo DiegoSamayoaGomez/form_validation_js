@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="myForm" action="https://httpbin.org/post" method="post" novalidate>
+        <li><label for="email">Email</label>
+            <input type="email" required>
+            <span class="error"></span>
+        </li>
+        <li>
+            <label for="country">Country</label>
+            <input type="text" required>
+            <span class="error"></span>
+        </li>
+        <li>
+            <label for="postal-code">Postal Code </label>
+            <input type="text" required>
+            <span class="error"></span>
+        </li>
+        <li><label for="password"> Password </label>
+            <input type="password" required>
+            <span class="error"></span>
+        </li>
+        <li><label for="password-confirm">Confirm Password</label>
+            <input type="password" required>
+            <span class="error"></span>
+        </li>
+
+        <li>
+            <button type="submit">Submit</button>
+        </li>
+
+    </form>
+</body>
+
+</html>
