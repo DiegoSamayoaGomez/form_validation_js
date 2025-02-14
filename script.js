@@ -68,7 +68,8 @@ function showPostalCodeError() {
     postalCodeError.textContent = "You need to enter a Postal Code";
   } else if (postalCode.validity.patternMismatch) {
     //Invalid zip code
-    postalCodeError.textContent = "You need to enter a valid ZIP code";
+    postalCodeError.textContent =
+      "You need to enter a valid ZIP code (5 digits)";
   } else if (postalCode.validity.tooShort) {
     // If the value is too short,
     postalCodeError.textContent = `Your ZIP code should have at least ${postalCode.minLength} characters; you entered ${email.value.length}.`;
