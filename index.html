@@ -4,39 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modern-normalize.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <form id="myForm" action="https://httpbin.org/post" method="post" novalidate>
-        <li><label for="email">Email</label>
-            <input type="email" required>
-            <span class="error"></span>
-        </li>
-        <li>
-            <label for="country">Country</label>
-            <input type="text" required>
-            <span class="error"></span>
-        </li>
-        <li>
-            <label for="postal-code">Postal Code </label>
-            <input type="text" required>
-            <span class="error"></span>
-        </li>
-        <li><label for="password"> Password </label>
-            <input type="password" required>
-            <span class="error"></span>
-        </li>
-        <li><label for="password-confirm">Confirm Password</label>
-            <input type="password" required>
-            <span class="error"></span>
-        </li>
+    <div class="main-form">
+        <h3>Form validation with JS API</h3>
+        <form id="myForm" action="https://httpbin.org/post" method="post" novalidate>
+            <ul>
+                <li><label for="email">Email</label>
+                    <input type="email" name="email-name" id="email" minlength="4" maxlength="15" required>
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <input type="text" name="country-name" id="country" minlength="4" maxlength="25" required>
+                    <span class="error"></span>
+                </li>
+                <li>
+                    <label for="postal-code">Postal Code </label>
+                    <input type="text" name="postal-code-name" id="postal-code" pattern="[0-9]{5}" minlength="5"
+                        maxlength="5" required>
+                    <span class="error"></span>
+                </li>
+                <li><label for="password"> Password </label>
+                    <input type="password" name="password-name" id="password" minlength="8" required>
+                    <span class="error"></span>
+                </li>
+                <li><label for="password-confirm">Confirm Password</label>
+                    <input type="password" name="password-confirm-name" id="password-confirm" minlength="8" required>
+                    <span class="error"></span>
+                </li>
 
-        <li>
-            <button type="submit">Submit</button>
-        </li>
+                <li>
+                    <button type="submit">Submit</button>
+                </li>
+            </ul>
 
-    </form>
+
+        </form>
+    </div>
+
 </body>
 
 </html>
