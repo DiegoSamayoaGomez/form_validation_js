@@ -10,42 +10,69 @@
     <script src="script.js" defer></script>
 </head>
 
+
+
 <body>
-    <div class="main-form">
-        <h3>Form validation with JS API</h3>
-        <form id="myForm" action="https://httpbin.org/post" method="post" novalidate>
-            <ul>
-                <li><label for="email">Email</label>
-                    <input type="email" name="email-name" id="email" minlength="4" maxlength="15" required>
-                    <span class="error"></span>
-                </li>
-                <li>
-                    <label for="country">Country</label>
-                    <input type="text" name="country-name" id="country" minlength="4" maxlength="25" required>
-                    <span class="error"></span>
-                </li>
-                <li>
-                    <label for="postal-code">Postal Code </label>
-                    <input type="text" name="postal-code-name" id="postal-code" pattern="[0-9]{5}" minlength="5"
-                        maxlength="5" required>
-                    <span class="error"></span>
-                </li>
-                <li><label for="password"> Password </label>
-                    <input type="password" name="password-name" id="password" minlength="8" required>
-                    <span class="error"></span>
-                </li>
-                <li><label for="password-confirm">Confirm Password</label>
-                    <input type="password" name="password-confirm-name" id="password-confirm" minlength="8" required>
-                    <span class="error"></span>
-                </li>
 
-                <li>
-                    <button type="submit">Submit</button>
-                </li>
-            </ul>
+    <div class="main">
+        <!-- ODIN LOGO AND PICTURE -->
+        <div class="background-image">
+            <div class="photo-credits">
+                <p>Photo by Me. That´s my lemon tree c:</p>
+            </div>
+
+        </div>
+        <!-- FORM -->
+        <div class="form-side">
+
+            <div class="upper-text">
+                <h3> This is not a real online service! You need something like this in your life to help you realize
+                    your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </h3>
+                <h3><em>Don´t submit personal data</em></h3>
+            </div>
+
+            <div class="main-form">
+                <h3>Form validation with JS API</h3>
+                <form id="myForm" action="https://httpbin.org/post" method="post" novalidate>
+                    <ul>
+                        <li><label for="email">Email</label>
+                            <input type="email" name="email-name" id="email" minlength="4" maxlength="15" required>
+                            <span class="error"></span>
+                        </li>
+                        <li>
+                            <label for="country">Country</label>
+                            <input type="text" name="country-name" id="country" minlength="4" maxlength="25" required>
+                            <span class="error"></span>
+                        </li>
+                        <li>
+                            <label for="postal-code">Postal Code </label>
+                            <input type="text" name="postal-code-name" id="postal-code" pattern="[0-9]{5}" minlength="5"
+                                maxlength="5" required>
+                            <span class="error"></span>
+                        </li>
+                        <li><label for="password"> Password </label>
+                            <input type="password" name="password-name" id="password" minlength="8" required>
+                            <span class="error"></span>
+                        </li>
+                        <li><label for="password-confirm">Confirm Password</label>
+                            <input type="password" name="password-confirm-name" id="password-confirm" minlength="8"
+                                required>
+                            <span class="error"></span>
+                        </li>
 
 
-        </form>
+                    </ul>
+
+
+                </form>
+            </div>
+            <div class="lower-button">
+                <button type="submit" form="myForm">Sign Up</button>
+            </div>
+
+        </div>
     </div>
 
 </body>
